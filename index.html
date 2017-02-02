@@ -2,14 +2,27 @@
 <html>
 
 <head>
-    <script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>
-    <script src="app.js"></script>
-    <script src="forecast.component.js"></script>
+    <!--<script src="https://ajax.googleapis.com/ajax/libs/angularjs/1.6.1/angular.min.js"></script>-->
+    <!--<script src="app.js"></script>
+    <script src="other.app.js"></script>-->
+    <script src="bundle.js"></script>
+    <!--<script src="forecast.app.js"></script>
+    <script src="forecast.component.js"></script>-->
 </head>
 
 <body>
-    <div data-ng-app="app">
+
+    <div id="weatherAppContainer">
         <forecast></forecast>
     </div>
-
+    <div id="appContainer">
+        <div ng-controller="MyController">
+            {{ greetMe }}
+        </div>
+    </div>
+    <div id="otherContainer">
+        <div ng-controller="OtherController">
+            {{ greetMe }}
+        </div>
+    </div>
 </body>
