@@ -1,7 +1,13 @@
 module.exports = {
+    // ENTRY FILE
+    // Initial file for webpack to start traversing dependecies
+    // Update this refernce to your app file
     entry: "./forecast.app.js",
     output: {
         path: __dirname,
+        // WEBPACK OUTPUT
+        // I have just a single bundled js file, can look at
+        // seperating out a vendor bundle for 3rd party libraries.
         filename: "bundle.js"
     },
     devServer: { inline: true },
