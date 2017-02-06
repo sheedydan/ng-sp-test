@@ -2,7 +2,7 @@ module.exports = {
     // ENTRY FILE
     // Initial file for webpack to start traversing dependecies
     // Update this refernce to your app file
-    entry: "./forecast.app.js",
+    entry: "./app.js",
     output: {
         path: __dirname,
         // WEBPACK OUTPUT

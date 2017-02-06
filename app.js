@@ -2,7 +2,7 @@
 import angular from 'angular';
 
 // Importing component
-import ForecastComponent from './forecast.component';
+import ForecastComponent from './src/forecast/forecast.component';
 
 // Initialising angular module
 angular.module('weatherApp', []);
