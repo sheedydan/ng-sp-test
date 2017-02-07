@@ -18,7 +18,7 @@ module.exports = {
             // Transpile .js files using babel-loader
             // Compiles ES6 and ES7 into ES5 code
             test: /\.js$/,
-            loader: 'babel-loader',
+            loader: 'babel-loader?presets[]=es2015',
             exclude: /node_modules/
 
         }, {

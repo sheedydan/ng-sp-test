@@ -8,6 +8,7 @@ import ForecastComponent from './src/forecast/forecast.component';
 angular.module('weatherApp', []);
 
 // newing up our component to add it to the module
+
 new ForecastComponent();
 angular.element(function() {
     angular.bootstrap(document.getElementById("weatherAppContainer"), ['weatherApp']);
