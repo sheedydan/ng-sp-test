@@ -2,14 +2,21 @@
 import angular from 'angular';
 
 // Importing component
-import ForecastComponent from './src/forecast/forecast.component';
+// import ForecastComponent from './src/forecast/forecast.component';
+import ForecastController from './src/forecast/forecast.controller';
+// import ForecastService from './src/forecast/forecast.service';
 
 // Initialising angular module
-angular.module('weatherApp', []);
+angular.module('weatherApp', [])
+    .component('forecast', {
+        //we require the template in so that webpack can traverse
+        template: require('./src/forecast/forecast.html'),
+        //our imported controller module
+        controller: ForecastController
+    });
+// .service('forecastService', ForecastService);
 
-// newing up our component to add it to the module
-
-new ForecastComponent();
+// bootstrpping our mo
 angular.element(function() {
     angular.bootstrap(document.getElementById("weatherAppContainer"), ['weatherApp']);
 });
