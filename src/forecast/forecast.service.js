@@ -1,10 +1,10 @@
-export default class ForecastService {
-    constructor($scope, $http) {
-        $scope = this;
+// export default class ForecastService {
+//     constructor($http) {}
 
-        return $http.get('http://localhost:47898/api/Forecasts/GetForecast')
-            .then(
-                function(a) { $scope.forecasts = a.data; }).catch(function(a) { /* todo: throw error */ });
-    }
 
-}
+//     getForecasts() {
+//         return $http.get('http://localhost:47898/api/Forecasts/GetForecast').then(function(response) {
+//                 return reponse.data;
+//             }
+//         }
+//     }
